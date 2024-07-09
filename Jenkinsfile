@@ -25,7 +25,7 @@ pipeline {
         stage('Deploy') {
             steps {
                script {
-                    sh "docker run -dt -p 9000:80 --name finalcontainer1 quinlan89/endtoendproject25may:v1"
+                    sh "docker run -dt -p 8989:80 --name finalcontainer1 quinlan89/endtoendproject25may:v1"
                 }
             }
         }
