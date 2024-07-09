@@ -5,4 +5,4 @@ management:
         include:
           - "*"
   server:
-    port: 80
+    port: 8085
