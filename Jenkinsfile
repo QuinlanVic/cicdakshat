@@ -7,6 +7,11 @@ pipeline {
                sh 'mvn clean install'
             }
         }
+        stage('Package Maven'){
+            steps{
+                sh "mvn package"
+            }
+        }
         stage('Build docker image'){
             steps{
                 script{
